@@ -1,0 +1,33 @@
+h3{
+    color: pink;
+}
+
+/* selector tag */
+p {
+    color: green;
+}
+
+h6 {
+    color: yellow;
+}
+
+/* 
+    selector class
+    kalau selector class bisa diubah ukurannya jadi teks-besar, kalau id tidak
+ */
+.teks-ungu {
+    color: purple;
+}
+
+.teks-besar {
+    font-size: 100px;
+}
+
+.teks-orange {
+    color: orange;
+}
+
+/* selector id */
+#teks-biru {
+    color: blue;
+}

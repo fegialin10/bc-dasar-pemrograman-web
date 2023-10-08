@@ -1,0 +1,124 @@
+.btn-primary {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 0.75rem 1rem;
+
+  transition: 0.5s all ease;
+
+  /* mengubah jenis cursor */
+  cursor: pointer;
+}
+
+/* pseudo element */
+.btn-primary:hover {
+  background-color: #333;
+  transform: scale(1.1);
+  /* transform: rotate(360deg) */
+  /* transform: translateX(20px); */
+  /* transform: translateY(20px); */
+}
+
+/* kondisi ketika element di click */
+.btn-primary:active {
+  transform: scale(1);
+  background-color: blueviolet;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+table tr th {
+  border: 1px solid black;
+}
+
+table tr td {
+  border: 1px solid black;
+}
+
+/* mengubah beberapa element setiap 2 baris */
+table tr:nth-child(2n) {
+  background-color: bisque;
+}
+
+/* mengubah style elemen pertama */
+table tr:first-child {
+    background-color: #333;
+    color: white;
+}
+
+/* mengubah style elemen terakhir */
+table tr:last-child {
+    background-color: #333;
+    color: white;
+}
+
+/* pseudo element */
+p::first-letter {
+    font-size: 50px;
+    color: brown;
+}
+
+p::first-line{
+    font-weight: bold;
+}
+
+h1{
+    text-align: center;
+}
+
+h1::before{
+    content: "🕸️";
+    color: red;
+}
+
+h1::after {
+    content: "🕸️";
+    color: blue;
+}
+
+.flexbox{
+    width: 100px;
+    height: 100px;
+    background-color: palegoldenrod;
+    border-radius: 8px;
+}
+
+.flex-container{
+    /* mengubah tampilan jadi row/baris */
+    display: flex;
+    /* untuk memberi jarak antar element (1rem=16px) */
+    gap: 1rem;
+    /* justify-content: space-between; */
+
+    /* mengatur arah flex jadi horizontal */
+    justify-content: center;
+
+    /* mengatur arah flex jadi vertikal */
+    align-items: center;
+}
+
+.flexbox-2{
+    height: 130px;
+}
+
+.flexbox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+
+/* agar flexbox naik turun */
+.flexbox:hover {
+    transform: translateY(20px);
+}
+
+/* agar flexbox besar kecil */
+.flexbox-2:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}

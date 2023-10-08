@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    /* mengubah font */
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    /* properti background */
+
+    /* mengubah warna latar belakang */
+    background-color: beige;
+
+    /* mengubah latar belakang menjadi gambar */
+    /* background-image: url(../image/image.JPG); */
+
+    /* agar gambar tidak berulang */
+    background-repeat: no-repeat;
+
+    /* mengatur ukuran gambar */
+    background-size: cover;
+}
+
+.rectangle {
+    /* properti lebar dan tinggi */
+    /* width untuk mengatur lebar */
+    /* height untuk mengatur tinggi */
+    width: 100px;
+    height: 100px;
+
+    background-color: red;
+
+    /* properti border */
+    /* 3px ukuran, solid dashed jenis, black white warna */
+    border: 3px solid black;
+
+    border: 3px dashed white;
+}
+
+h1 {
+    /* mengubah ketebalan font */
+    font-weight: 500;
+
+    /* mengubah ukuran font */
+    /* 1 rem = 16px */
+    font-size: 5rem;
+
+    /* mengatur kemiringan font */
+    font-style: italic;
+
+    /* mengatur font menjadi huruf kapital */
+    font-variant: small-caps;
+}
+
+.margin {
+    /* margin memberikan jarak luar semua sisi */
+    /* margin: 1rem; */
+
+    margin-top: 1rem;
+    /* margin-bottom: 1rem; */
+    /* margin-left: 1rem; */
+    /* margin-right: 1rem; */
+}
+
+.pengumuman {
+    background-color: yellow;
+
+    /* memberi jarak pada sebuah elemen */
+    /* padding property */
+
+    /* memberi jarak dalam */
+    padding: 1rem;
+
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+p {
+    /* teks properti */
+
+    /* mengubah warna text */
+    color: red;
+
+    /* memberikan jarak antar huruf */
+    letter-spacing: .5rem;
+
+    /* memberikan jarak antar baris */
+    line-height: 3rem;
+
+    /* mengatur posisi teks */
+    text-align: left;
+    text-align: right;
+    text-align: center;
+
+    /* memberi garis bawah pada sebuah teks */
+    text-decoration: underline;
+}
+
+/* display property */
+.display {
+    /* menghilangkan elemen */
+    display: none;
+
+    /* menampilkan elemen */
+    display: block;
+}
+
+/* berfungsi memberikan garis lengkung */
+.border-radius {
+    border-radius: 1rem;
+    border-radius: 50%;
+}
+
+header {
+    background-color: white;
+    padding: 1rem;
+    width: 100%;
+
+    /* mengatur posisi elemen agar fixed */
+    position: fixed;
+
+    /* memindahkan elemen di layer paling atas */
+    z-index: 999;
+}
+
+.rectangle {
+    position: relative;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+
+    /* mengatur elemen posisinya bebas*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
